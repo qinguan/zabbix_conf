@@ -1,0 +1,1499 @@
+<?xml version="1.0"?>
+<zabbix_export version="1.0" date="04.05.07" time="09.44">
+	<hosts>
+		<host name="Template_Linux">
+			<port>10050</port>
+			<status>3</status>
+			<groups>
+				<group>Templates</group>
+			</groups>
+			<items>
+				<item type="0" key="agent.ping" value_type="3">
+					<description>Ping to the server (TCP)</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<valuemap>Service state</valuemap>
+					<applications>
+						<application>General</application>
+					</applications>
+				</item>
+				<item type="0" key="agent.version" value_type="1">
+					<description>Version of zabbix_agent(d) running</description>
+					<delay>1800</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Processes</application>
+					</applications>
+				</item>
+				<item type="0" key="filesize[/var/log/syslog]" value_type="3">
+					<description>Size of $1</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Log files</application>
+					</applications>
+				</item>
+				<item type="0" key="kernel.maxfiles" value_type="3">
+					<description>Maximum number of opened files</description>
+					<delay>1800</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>OS</application>
+					</applications>
+				</item>
+				<item type="0" key="kernel.maxproc" value_type="3">
+					<description>Maximum number of processes</description>
+					<delay>1800</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>OS</application>
+					</applications>
+				</item>
+				<item type="0" key="net.if.in[eth0,bytes]" value_type="0">
+					<description>Incoming traffic on interface $1</description>
+					<delay>5</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>Bps</units>
+					<delta>1</delta>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Network</application>
+						<application>Performance</application>
+					</applications>
+				</item>
+				<item type="0" key="net.if.in[eth1,bytes]" value_type="0">
+					<description>Incoming traffic on interface $1</description>
+					<delay>5</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>Bps</units>
+					<delta>1</delta>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Network</application>
+						<application>Performance</application>
+					</applications>
+				</item>
+				<item type="0" key="net.if.in[lo,bytes]" value_type="0">
+					<description>Incoming traffic on interface $1</description>
+					<delay>5</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>Bps</units>
+					<delta>1</delta>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Network</application>
+						<application>Performance</application>
+					</applications>
+				</item>
+				<item type="0" key="net.if.out[eth0,bytes]" value_type="0">
+					<description>Outgoing traffic on interface $1</description>
+					<delay>5</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>Bps</units>
+					<delta>1</delta>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Network</application>
+						<application>Performance</application>
+					</applications>
+				</item>
+				<item type="0" key="net.if.out[eth1,bytes]" value_type="0">
+					<description>Outgoing traffic on interface $1</description>
+					<delay>5</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>Bps</units>
+					<delta>1</delta>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Network</application>
+						<application>Performance</application>
+					</applications>
+				</item>
+				<item type="0" key="net.if.out[lo,bytes]" value_type="0">
+					<description>Outgoing traffic on interface $1</description>
+					<delay>5</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>Bps</units>
+					<delta>1</delta>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Network</application>
+						<application>Performance</application>
+					</applications>
+				</item>
+				<item type="0" key="net.tcp.service[ftp]" value_type="3">
+					<description>FTP server is running</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<valuemap>Service state</valuemap>
+					<applications>
+						<application>Services</application>
+					</applications>
+				</item>
+				<item type="0" key="net.tcp.service[http]" value_type="3">
+					<description>WEB (HTTP) server is running</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<valuemap>Service state</valuemap>
+					<applications>
+						<application>Services</application>
+					</applications>
+				</item>
+				<item type="0" key="net.tcp.service[imap]" value_type="3">
+					<description>IMAP server is running</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<valuemap>Service state</valuemap>
+					<applications>
+						<application>Services</application>
+					</applications>
+				</item>
+				<item type="0" key="net.tcp.service[nntp]" value_type="3">
+					<description>News (NNTP) server is running</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<valuemap>Service state</valuemap>
+					<applications>
+						<application>Services</application>
+					</applications>
+				</item>
+				<item type="0" key="net.tcp.service[pop]" value_type="3">
+					<description>POP3 server is running</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<valuemap>Service state</valuemap>
+					<applications>
+						<application>Services</application>
+					</applications>
+				</item>
+				<item type="0" key="net.tcp.service[smtp]" value_type="3">
+					<description>Email (SMTP) server is running</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<valuemap>Service state</valuemap>
+					<applications>
+						<application>Services</application>
+					</applications>
+				</item>
+				<item type="0" key="net.tcp.service[ssh]" value_type="3">
+					<description>SSH server is running</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<valuemap>Service state</valuemap>
+					<applications>
+						<application>Services</application>
+					</applications>
+				</item>
+				<item type="0" key="proc.num[,,run]" value_type="3">
+					<description>Number of running processes</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Processes</application>
+					</applications>
+				</item>
+				<item type="0" key="proc.num[httpd]" value_type="3">
+					<description>Number of running processes apache</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Processes</application>
+					</applications>
+				</item>
+				<item type="0" key="proc.num[inetd]" value_type="3">
+					<description>Number of running processes inetd</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Processes</application>
+					</applications>
+				</item>
+				<item type="0" key="proc.num[mysqld]" value_type="3">
+					<description>Number of running processes mysqld</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Processes</application>
+					</applications>
+				</item>
+				<item type="0" key="proc.num[sshd]" value_type="3">
+					<description>Number of running processes sshd</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Processes</application>
+					</applications>
+				</item>
+				<item type="0" key="proc.num[syslogd]" value_type="3">
+					<description>Number of running processes syslogd</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Processes</application>
+					</applications>
+				</item>
+				<item type="0" key="proc.num[zabbix_agentd]" value_type="3">
+					<description>Number of running processes $1</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Processes</application>
+					</applications>
+				</item>
+				<item type="0" key="proc.num[zabbix_server]" value_type="3">
+					<description>Number of running processes $1</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Processes</application>
+					</applications>
+				</item>
+				<item type="0" key="proc.num[]" value_type="3">
+					<description>Number of processes</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Processes</application>
+					</applications>
+				</item>
+				<item type="0" key="sensor[temp1]" value_type="0">
+					<description>Temperature of mainboard</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>C</units>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>OS</application>
+					</applications>
+				</item>
+				<item type="0" key="sensor[temp2]" value_type="0">
+					<description>Temperature of CPU 1of2</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>C</units>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>OS</application>
+					</applications>
+				</item>
+				<item type="0" key="sensor[temp3]" value_type="0">
+					<description>Temperature of CPU 2of2</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>C</units>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>OS</application>
+					</applications>
+				</item>
+				<item type="0" key="status" value_type="3">
+					<description>Host status</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<valuemap>Host status</valuemap>
+					<applications>
+						<application>General</application>
+						<application>OS</application>
+					</applications>
+				</item>
+				<item type="0" key="system.boottime" value_type="3">
+					<description>Host boot time</description>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<units>unixtime</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>General</application>
+						<application>OS</application>
+					</applications>
+				</item>
+				<item type="0" key="system.cpu.load[,avg15]" value_type="0">
+					<description>Processor load15</description>
+					<delay>20</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>CPU</application>
+						<application>Performance</application>
+					</applications>
+				</item>
+				<item type="7" key="system.cpu.load[,avg1]" value_type="0">
+					<description>Processor load</description>
+					<delay>5</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>CPU</application>
+						<application>Performance</application>
+					</applications>
+				</item>
+				<item type="0" key="system.cpu.load[,avg5]" value_type="0">
+					<description>Processor load5</description>
+					<delay>10</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>CPU</application>
+						<application>Performance</application>
+					</applications>
+				</item>
+				<item type="0" key="system.cpu.util[,idle,avg1]" value_type="0">
+					<description>CPU $2 time ($3)</description>
+					<delay>10</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>CPU</application>
+						<application>Performance</application>
+					</applications>
+				</item>
+				<item type="0" key="system.cpu.util[,nice,avg1]" value_type="0">
+					<description>CPU $2 time ($3)</description>
+					<delay>10</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>CPU</application>
+						<application>Performance</application>
+					</applications>
+				</item>
+				<item type="0" key="system.cpu.util[,system,avg1]" value_type="0">
+					<description>CPU $2 time ($3)</description>
+					<delay>10</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>CPU</application>
+						<application>Performance</application>
+					</applications>
+				</item>
+				<item type="0" key="system.cpu.util[,user,avg1]" value_type="0">
+					<description>CPU user time (avg1)</description>
+					<delay>10</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>CPU</application>
+						<application>Performance</application>
+					</applications>
+				</item>
+				<item type="0" key="system.cpu.util[,wait,avg1]" value_type="0">
+					<description>CPU $2 time ($3)</description>
+					<delay>10</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>CPU</application>
+						<application>Performance</application>
+					</applications>
+				</item>
+				<item type="0" key="system.hostname" value_type="1">
+					<description>Host name</description>
+					<delay>1800</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>General</application>
+						<application>OS</application>
+					</applications>
+				</item>
+				<item type="0" key="system.localtime" value_type="3">
+					<description>Host local time</description>
+					<delay>30</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<units>unixtime</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>General</application>
+						<application>OS</application>
+					</applications>
+				</item>
+				<item type="0" key="system.swap.size[,free]" value_type="3">
+					<description>Free swap space</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+					</applications>
+				</item>
+				<item type="0" key="system.swap.size[,pfree]" value_type="0">
+					<description>Free swap space in %</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="system.swap.size[,total]" value_type="3">
+					<description>Total swap space</description>
+					<delay>1800</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+					</applications>
+				</item>
+				<item type="0" key="system.uname" value_type="1">
+					<description>Host information</description>
+					<delay>1800</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>General</application>
+						<application>OS</application>
+					</applications>
+				</item>
+				<item type="0" key="system.uptime" value_type="3">
+					<description>Host uptime (in sec)</description>
+					<delay>300</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>uptime</units>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>General</application>
+						<application>OS</application>
+					</applications>
+				</item>
+				<item type="0" key="system.users.num" value_type="3">
+					<description>Number of users connected</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>OS</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.file.cksum[/etc/inetd.conf]" value_type="3">
+					<description>Checksum of $1</description>
+					<delay>600</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Integrity</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.file.cksum[/etc/passwd]" value_type="3">
+					<description>Checksum of $1</description>
+					<delay>600</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Integrity</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.file.cksum[/etc/services]" value_type="3">
+					<description>Checksum of $1</description>
+					<delay>600</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Integrity</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.file.cksum[/usr/bin/ssh]" value_type="3">
+					<description>Checksum of $1</description>
+					<delay>600</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Integrity</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.file.cksum[/usr/sbin/sshd]" value_type="3">
+					<description>Checksum of $1</description>
+					<delay>600</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Integrity</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.file.cksum[/vmlinuz]" value_type="3">
+					<description>Checksum of $1</description>
+					<delay>600</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Integrity</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.inode[/,free]" value_type="3">
+					<description>Free number of inodes on $1</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.inode[/,pfree]" value_type="0">
+					<description>Free number of inodes on $1 in %</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.inode[/,total]" value_type="3">
+					<description>Total number of inodes on $1</description>
+					<delay>3600</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.inode[/home,free]" value_type="3">
+					<description>Free number of inodes on $1</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.inode[/home,pfree]" value_type="0">
+					<description>Free number of inodes on $1 in %</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.inode[/home,total]" value_type="3">
+					<description>Total number of inodes on $1</description>
+					<delay>3600</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.inode[/opt,free]" value_type="3">
+					<description>Free number of inodes on $1</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.inode[/opt,pfree]" value_type="0">
+					<description>Free number of inodes on $1 in %</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.inode[/opt,total]" value_type="3">
+					<description>Total number of inodes on $1</description>
+					<delay>3600</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.inode[/tmp,free]" value_type="3">
+					<description>Free number of inodes on $1</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.inode[/tmp,pfree]" value_type="0">
+					<description>Free number of inodes on $1 in %</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.inode[/tmp,total]" value_type="3">
+					<description>Total number of inodes on $1</description>
+					<delay>3600</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.inode[/usr,free]" value_type="3">
+					<description>Free number of inodes on $1</description>
+					<delay>60</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.inode[/usr,pfree]" value_type="0">
+					<description>Free number of inodes on $1 in %</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.inode[/usr,total]" value_type="3">
+					<description>Total number of inodes on $1</description>
+					<delay>3600</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/,free]" value_type="3">
+					<description>Free disk space on $1</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/,pfree]" value_type="0">
+					<description>Free disk space on $1 in %</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/,pused]" value_type="0">
+					<description>Used disk space on $1 in %</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/,total]" value_type="3">
+					<description>Total disk space on $1</description>
+					<delay>3600</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/,used]" value_type="3">
+					<description>Used disk space on $1</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/home,free]" value_type="3">
+					<description>Free disk space on $1</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/home,pfree]" value_type="0">
+					<description>Free disk space on $1 in %</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/home,total]" value_type="3">
+					<description>Total disk space on $1</description>
+					<delay>3600</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/home,used]" value_type="3">
+					<description>Used disk space on $1</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/opt,free]" value_type="3">
+					<description>Free disk space on $1</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/opt,pfree]" value_type="0">
+					<description>Free disk space on $1 in %</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/opt,pused]" value_type="0">
+					<description>Used disk space on $1 in %</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/opt,total]" value_type="3">
+					<description>Total disk space on $1</description>
+					<delay>3600</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/opt,used]" value_type="3">
+					<description>Used disk space on $1</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/tmp,free]" value_type="3">
+					<description>Free disk space on $1</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/tmp,pfree]" value_type="0">
+					<description>Free disk space on $1 in %</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/tmp,pused]" value_type="0">
+					<description>Used disk space on $1 in %</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/tmp,total]" value_type="3">
+					<description>Total disk space on $1</description>
+					<delay>3600</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/tmp,used]" value_type="3">
+					<description>Used disk space on $1</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/usr,free]" value_type="3">
+					<description>Free disk space on $1</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/usr,pfree]" value_type="0">
+					<description>Free disk space on $1 in %</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/usr,pused]" value_type="0">
+					<description>Used disk space on $1 in %</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/usr,total]" value_type="3">
+					<description>Total disk space on $1</description>
+					<delay>3600</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/usr,used]" value_type="3">
+					<description>Used disk space on $1</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/var,free]" value_type="3">
+					<description>Free disk space on $1</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/var,pfree]" value_type="0">
+					<description>Free disk space on $1 in %</description>
+					<delay>30</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/var,pused]" value_type="0">
+					<description>Used disk space on $1 in %</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>%</units>
+					<formula>1</formula>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vfs.fs.size[/var,used]" value_type="0">
+					<description>Used disk space on $1</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<multiplier>1</multiplier>
+					<formula>1024</formula>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Filesystem</application>
+					</applications>
+				</item>
+				<item type="0" key="vm.memory.size[buffers]" value_type="3">
+					<description>Buffers memory</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Memory</application>
+					</applications>
+				</item>
+				<item type="0" key="vm.memory.size[cached]" value_type="3">
+					<description>Cached memory</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Memory</application>
+					</applications>
+				</item>
+				<item type="0" key="vm.memory.size[free]" value_type="3">
+					<description>Free memory</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Memory</application>
+					</applications>
+				</item>
+				<item type="0" key="vm.memory.size[shared]" value_type="3">
+					<description>Shared memory</description>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Memory</application>
+					</applications>
+				</item>
+				<item type="0" key="vm.memory.size[total]" value_type="3">
+					<description>Total memory</description>
+					<delay>1800</delay>
+					<history>7</history>
+					<trends>365</trends>
+					<units>B</units>
+					<snmp_port>161</snmp_port>
+					<applications>
+						<application>Availability</application>
+						<application>Memory</application>
+					</applications>
+				</item>
+			</items>
+			<triggers>
+				<trigger>
+					<description>Lack of free memory on server {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:vm.memory.size[free].last(0)}&lt;10000</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>Low free disk space on {HOSTNAME} volume /</description>
+					<expression>{{HOSTNAME}:vfs.fs.size[/,pfree].last(0)}&lt;10</expression>
+					<priority>4</priority>
+				</trigger>
+				<trigger>
+					<description>Low free disk space on {HOSTNAME} volume /usr</description>
+					<expression>{{HOSTNAME}:vfs.fs.size[/usr,pfree].last(0)}&lt;10</expression>
+					<priority>4</priority>
+				</trigger>
+				<trigger>
+					<description>Low number of free inodes on {HOSTNAME} volume /</description>
+					<expression>{{HOSTNAME}:vfs.fs.inode[/,pfree].last(0)}&lt;10</expression>
+					<priority>4</priority>
+				</trigger>
+				<trigger>
+					<description>Low number of free inodes on {HOSTNAME} volume /opt</description>
+					<expression>{{HOSTNAME}:vfs.fs.inode[/opt,pfree].last(0)}&lt;10</expression>
+					<priority>4</priority>
+				</trigger>
+				<trigger>
+					<description>Low number of free inodes on {HOSTNAME} volume /tmp</description>
+					<expression>{{HOSTNAME}:vfs.fs.inode[/tmp,pfree].last(0)}&lt;10</expression>
+					<priority>4</priority>
+				</trigger>
+				<trigger>
+					<description>Low number of free inodes on {HOSTNAME} volume /usr</description>
+					<expression>{{HOSTNAME}:vfs.fs.inode[/usr,pfree].last(0)}&lt;10</expression>
+					<priority>4</priority>
+				</trigger>
+				<trigger>
+					<description>Processor load is too high on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:system.cpu.load[,avg1].last(0)}&gt;5</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>Too many processes running on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:proc.num[,,run].last(0)}&gt;10</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>Lack of free swap space on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:system.swap.size[,free].last(0)}&lt;100000</expression>
+					<priority>4</priority>
+				</trigger>
+				<trigger>
+					<description>Too may users connected on server {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:system.users.num.last(0)}&gt;50</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>/etc/inetd.conf has been changed on server {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:vfs.file.cksum[/etc/inetd.conf].diff(0)}&gt;0</expression>
+					<priority>2</priority>
+				</trigger>
+				<trigger>
+					<description>/vmlinuz has been changed on server {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:vfs.file.cksum[/vmlinuz].diff(0)}&gt;0</expression>
+					<priority>2</priority>
+				</trigger>
+				<trigger>
+					<description>/etc/passwd has been changed on server {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:vfs.file.cksum[/etc/passwd].diff(0)}&gt;0</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>Low free disk space on {HOSTNAME} volume /home</description>
+					<expression>{{HOSTNAME}:vfs.fs.size[/home,pfree].last(0)}&lt;10</expression>
+					<priority>4</priority>
+				</trigger>
+				<trigger>
+					<description>Low number of free inodes on {HOSTNAME} volume /home</description>
+					<expression>{{HOSTNAME}:vfs.fs.inode[/home,pfree].last(0)}&lt;10</expression>
+					<priority>4</priority>
+				</trigger>
+				<trigger>
+					<description>Low free disk space on {HOSTNAME} volume /var</description>
+					<expression>{{HOSTNAME}:vfs.fs.size[/var,pfree].last(0)}&lt;10</expression>
+					<priority>4</priority>
+				</trigger>
+				<trigger>
+					<description>Low free disk space on {HOSTNAME} volume /opt</description>
+					<expression>{{HOSTNAME}:vfs.fs.size[/opt,pfree].last(0)}&lt;10</expression>
+					<priority>4</priority>
+				</trigger>
+				<trigger>
+					<description>{HOSTNAME} has just been restarted</description>
+					<expression>{{HOSTNAME}:system.uptime.last(0)}&lt;600</expression>
+					<priority>1</priority>
+				</trigger>
+				<trigger>
+					<description>Email (SMTP) server is down on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:net.tcp.service[smtp].last(0)}=0</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>FTP server is down on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:net.tcp.service[ftp].last(0)}=0</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>SSH server is down on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:net.tcp.service[ssh].last(0)}=0</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>POP3 server is down on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:net.tcp.service[pop].last(0)}=0</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>IMAP server is down on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:net.tcp.service[imap].last(0)}=0</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>/usr/sbin/sshd has been changed on server {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:vfs.file.cksum[/usr/sbin/sshd].diff(0)}&gt;0</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>/usr/bin/ssh has been changed on server {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:vfs.file.cksum[/usr/bin/ssh].diff(0)}&gt;0</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>/etc/services has been changed on server {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:vfs.file.cksum[/etc/services].diff(0)}&gt;0</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>News (NNTP) server is down on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:net.tcp.service[nntp].last(0)}=0</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>Inetd is not running on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:proc.num[inetd].last(0)}&lt;1</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>Apache is not running on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:proc.num[httpd].last(0)}&lt;1</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>Mysql is not running on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:proc.num[mysqld].last(0)}&lt;1</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>Syslogd is not running on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:proc.num[syslogd].last(0)}&lt;1</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>Sshd is not running on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:proc.num[sshd].last(0)}&lt;1</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>Zabbix_agentd is not running on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:proc.num[zabbix_agentd].last(0)}&lt;1</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>Zabbix_server is not running on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:proc.num[zabbix_server].last(0)}&lt;1</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>Configured max number of processes is too low on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:kernel.maxproc.last(0)}&lt;256</expression>
+					<priority>1</priority>
+				</trigger>
+				<trigger>
+					<description>Configured max number of opened files is too low on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:kernel.maxfiles.last(0)}&lt;512</expression>
+					<priority>1</priority>
+				</trigger>
+				<trigger>
+					<description>Hostname was changed on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:system.hostname.diff(0)}&gt;0</expression>
+					<priority>1</priority>
+				</trigger>
+				<trigger>
+					<description>Host information was changed on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:system.uname.diff(0)}&gt;0</expression>
+					<priority>1</priority>
+				</trigger>
+				<trigger>
+					<description>Version of zabbix_agent(d) was changed on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:agent.version.diff(0)}&gt;0</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>WEB (HTTP) server is down on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:net.tcp.service[http].last(0)}=0</expression>
+					<priority>3</priority>
+				</trigger>
+				<trigger>
+					<description>Server {HOSTNAME} is unreachable</description>
+					<expression>{{HOSTNAME}:status.last(0)}=2</expression>
+					<priority>4</priority>
+				</trigger>
+				<trigger>
+					<description>Low free disk space on {HOSTNAME} volume /tmp</description>
+					<expression>{{HOSTNAME}:vfs.fs.size[/tmp,pfree].last(0)}&lt;10</expression>
+					<priority>4</priority>
+				</trigger>
+				<trigger>
+					<description>Too many processes on {HOSTNAME}</description>
+					<expression>{{HOSTNAME}:proc.num[].last(0)}&gt;300</expression>
+					<priority>4</priority>
+				</trigger>
+			</triggers>
+		</host>
+	</hosts>
+</zabbix_export>
