@@ -41,7 +41,7 @@ b='Server=127.0.0.1'
 c='Hostname=Zabbix server'
 
 a1=' EnableRemoteCommands=1'
-b1='Server=monitor.qiyi.virtual'
+b1='Server=monitor.abc.com'
 c1="Hostname=$ip"
 
 conf_file=/etc/zabbix/zabbix_agentd.conf
